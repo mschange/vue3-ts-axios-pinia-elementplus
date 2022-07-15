@@ -17,7 +17,13 @@ import 'element-plus/dist/index.css'
 // 引入pinia
 import { createPinia } from 'pinia'
 
+// 引入路由
+import router from "./router"
+
 const app = createApp(App);
+
+// 注册路由
+app.use(router);
 
 // 注册pinia
 app.use(createPinia())
